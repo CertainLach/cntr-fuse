@@ -31,7 +31,7 @@ jobs:
       - name: Display version information
         run: rustup --version; cargo --version; rustc --version
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Build everything
         continue-on-error: ${{ matrix.rust == 'nightly' }}
         uses: actions-rs/cargo@v1
